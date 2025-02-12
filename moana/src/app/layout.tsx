@@ -22,7 +22,9 @@ export default function RootLayout({
       <TypekitLoader />
       <body className={`${notoSansJP.className} text-[18px]`}>
         <Header />
-        <div className="px-4 pb-16 max-w-5xl mx-auto md:px-12 ">{children}</div>
+        <div className="px-4 pb-16 max-w-5xl mx-auto overflow-x-hidden md:px-12 ">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
