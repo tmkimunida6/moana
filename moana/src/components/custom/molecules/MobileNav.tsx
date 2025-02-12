@@ -15,6 +15,7 @@ import Link from 'next/link'
 import { IoChevronForward } from 'react-icons/io5'
 import Image from 'next/image'
 import Logo from '../atoms/Logo'
+import SnsIconList from './SnsIconList'
 
 type MobileNavProps = {
   menuItems: Array<{
@@ -38,7 +39,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
       <SheetContent side="top" className="px-4 pt-0 pb-6 bg-white">
         <SheetTitle className="py-3">
           <Link href="/">
-            <Logo />
+            <Logo section="header" />
           </Link>
         </SheetTitle>
         <SheetDescription className="sr-only">メニュー</SheetDescription>
@@ -64,22 +65,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
             ))}
           </div>
           <div className="flex items-center px-4 mt-6 gap-6">
-            <Link href="https://www.instagram.com/moana_personal_gym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-              <Image
-                src="/images/instagram.svg"
-                alt="モアナ公式インスタグラム"
-                width={40}
-                height={40}
-              />
-            </Link>
-            <Link href="https://lin.ee/8BhsvPu">
-              <Image
-                src="/images/line.svg"
-                alt="モアナ公式ライン"
-                width={40}
-                height={40}
-              />
-            </Link>
+            <SnsIconList />
           </div>
         </div>
       </SheetContent>

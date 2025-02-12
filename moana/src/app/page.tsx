@@ -1,7 +1,8 @@
+import CvButton from '@/components/custom/atoms/CvButton'
 import GridTextItem from '@/components/custom/atoms/GridTextItem'
 import TextLink from '@/components/custom/atoms/TextLink'
-import ContactTableRow from '@/components/custom/molecules/ContactTableRow'
 import PriceTableRow from '@/components/custom/molecules/PriceTableRow'
+import Contact from '@/components/custom/organisms/Contact'
 import PriceTable from '@/components/custom/organisms/PriceTable'
 import HighlightedText from '@/components/feature/top/HighlightedText'
 import PointBox from '@/components/feature/top/PointBox'
@@ -14,10 +15,10 @@ import { IoCall, IoChevronForward, IoMail } from 'react-icons/io5'
 
 export default function Home() {
   return (
-    <>
+    <div className="grid gap-20">
       <section>
         <SectionHeading subtext="about">
-          <span className="font-moana text-brand-primary text-[38px]">
+          <span className="font-moana text-brand-primary text-[38px] leading-none">
             Moana
           </span>
           について
@@ -41,15 +42,13 @@ export default function Home() {
           普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？
         </p>
         <div className="text-center mt-16">
-          <Button asChild>
-            <Link href="#">無料カウンセリングを申し込む</Link>
-          </Button>
+          <CvButton />
         </div>
       </section>
 
       <section>
         <SectionHeading subtext="point">
-          <span className="text-brand-primary text-[86px] text-outline-white">
+          <span className="text-brand-primary text-[86px] text-outline-white leading-none">
             3
           </span>
           つのポイント
@@ -255,7 +254,7 @@ export default function Home() {
 
       <section>
         <SectionHeading subtext="contact">お問い合わせ</SectionHeading>
-        <div className="grid gap-6">
+        <div className="grid gap-8">
           <div className="flex items-center gap-4">
             <Image
               src="/images/logo-circle.svg"
@@ -265,38 +264,12 @@ export default function Home() {
             />
             <h3 className="font-bold ">MOANA パーソナルトレーニングジム</h3>
           </div>
-          <ul className="grid gap-1">
-            <ContactTableRow title="住所">
-              <TextLink
-                href="https://maps.app.goo.gl/9Asa5GeZQUcLCwoo8"
-                openInNew
-              >
-                〒671-2245 兵庫県姫路市町田214-1-3
-              </TextLink>
-            </ContactTableRow>
-            <ContactTableRow title="営業時間">
-              <span>
-                10:00 〜 21:00
-                <br />
-                <span className="text-base">
-                  ※トレーナーは常駐していないため、恐れ入りますがご来店の際にはご予約をお願いいたします。
-                </span>
-              </span>
-            </ContactTableRow>
-            <ContactTableRow title="Email">
-              <TextLink href="email:moanapersonalgym@gmail.com" openInNew>
-                moanapersonalgym@gmail.com
-              </TextLink>
-            </ContactTableRow>
-            <ContactTableRow title="TEL">
-              <TextLink href="tel:079-290-9070" openInNew>
-                079-290-9070
-              </TextLink>
-            </ContactTableRow>
-          </ul>
+          <Contact />
           <div>
             <p>
-              LINEまたはお問い合わせフォームからのお問い合わせも受け付けております。お気軽にお問い合わせください。
+              LINEまたはお問い合わせフォームからのお問い合わせも受け付けております。
+              <br />
+              お気軽にお問い合わせください。
             </p>
             <ul className="text-base grid gap-1 mt-2">
               <li>
@@ -318,16 +291,16 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6824330145155!2d134.6472396!3d34.864206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1e413d52713%3A0xcb3541d250ab516!2zTU9BTkEg44OR44O844K944OK44Or44OI44Os44O844OL44Oz44Kw44K444Og!5e0!3m2!1sja!2sjp!4v1739275154702!5m2!1sja!2sjp"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+          ></iframe>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6824330145155!2d134.6472396!3d34.864206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1e413d52713%3A0xcb3541d250ab516!2zTU9BTkEg44OR44O844K944OK44Or44OI44Os44O844OL44Oz44Kw44K444Og!5e0!3m2!1sja!2sjp!4v1739275154702!5m2!1sja!2sjp"
-          width="100%"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen={true}
-          loading="lazy"
-        ></iframe>
       </section>
-    </>
+    </div>
   )
 }

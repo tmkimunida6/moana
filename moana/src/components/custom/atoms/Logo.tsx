@@ -1,12 +1,16 @@
 import Image from 'next/image'
 
-export default function Logo() {
+type LogoProps = {
+  section: 'header' | 'footer'
+}
+
+export default function Logo({ section }: LogoProps) {
   return (
     <Image
       src="/images/logo.svg"
       alt="パーソナルトレーニングジム「モアナ」"
-      width={175}
-      height={40}
+      width={section === 'header' ? 175 : 262}
+      height={section === 'header' ? 40 : 65}
     />
   )
 }
