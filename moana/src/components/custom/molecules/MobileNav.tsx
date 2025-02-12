@@ -44,7 +44,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
         <SheetDescription className="sr-only">メニュー</SheetDescription>
         <div className="relative">
           <Image
-            src="/images/logo-circle.jpg"
+            src="/images/logo-circle.svg"
             alt="モアナロゴ"
             width={200}
             height={200}
@@ -63,7 +63,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
               </div>
             ))}
           </div>
-          <div className="flex align-center px-4 mt-6 gap-6">
+          <div className="flex items-center px-4 mt-6 gap-6">
             <Link href="https://www.instagram.com/moana_personal_gym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               <Image
                 src="/images/instagram.svg"

@@ -33,7 +33,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b bg-white">
       <div className="flex h-14 items-center px-5 py-3 justify-between">
         <Link href="/">
           <Logo />
