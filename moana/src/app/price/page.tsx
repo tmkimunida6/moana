@@ -1,14 +1,12 @@
-import BoxWithArrow from '@/components/custom/atoms/BoxWithArrow'
 import CvButton from '@/components/custom/atoms/CvButton'
-import GridTextItem from '@/components/custom/atoms/GridTextItem'
 import TextLink from '@/components/custom/atoms/TextLink'
 import PageHeading from '@/components/custom/molecules/PageHeading'
 import PriceTableRow from '@/components/custom/molecules/PriceTableRow'
 import PriceTable from '@/components/custom/organisms/PriceTable'
+import ZeroBanner from '@/components/custom/organisms/ZeroBanner'
 import BenefitBox from '@/components/feature/price/BenefitBox'
 import PriceBox from '@/components/feature/price/PriceBox'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import Image from 'next/image'
 import { IoChevronForward, IoPeopleSharp, IoPersonSharp } from 'react-icons/io5'
 
 export default function Price() {
@@ -19,26 +17,7 @@ export default function Price() {
         <p>
           モアナの料金システムはとっても簡単。お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。
         </p>
-        <div className="w-full max-w-[400px] flex flex-col items-center gap-4 mx-auto">
-          <div className="w-full">
-            <BoxWithArrow bg="accent">
-              <ul className="grid grid-cols-[repeat(2,minmax(136px,1fr))] gap-1">
-                <GridTextItem text="入会金" bg="white" />
-                <GridTextItem text="月会費" bg="white" />
-                <GridTextItem text="登録手数料" bg="white" />
-                <GridTextItem text="解約金" bg="white" />
-              </ul>
-            </BoxWithArrow>
-          </div>
-          <div className="w-[70vw] max-w-[250px] aspect-[3/2] relative">
-            <Image
-              src="/images/price/zero.png"
-              alt="すべて￥0"
-              fill
-              className="contain"
-            />
-          </div>
-        </div>
+        <ZeroBanner />
         <div className="grid gap-6">
           <h2 className="text-2xl font-bold text-center">料金詳細</h2>
           <p>
