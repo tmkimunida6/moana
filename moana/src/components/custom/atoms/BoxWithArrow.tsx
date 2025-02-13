@@ -13,10 +13,10 @@ export default function BoxWithArrow({
 }: BoxWithArrowProps) {
   return (
     <div
-      className={`rounded-sm p-4 grid gap-2 relative ${
+      className={`rounded-sm grid gap-2 relative ${
         bg === 'accent'
-          ? 'bg-brand-accent'
-          : 'border border-2 border-brand-accent bg-white'
+          ? 'bg-brand-accent p-2'
+          : 'border border-2 border-brand-accent bg-white p-4'
       }`}
     >
       {children}

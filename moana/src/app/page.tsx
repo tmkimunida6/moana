@@ -66,43 +66,40 @@ export default function Home() {
             }
             imageUrl="/images/top/point2.jpg"
           >
-            <div className="grid gap-1">
-              <PriceTable>
-                <PriceTableRow
-                  th={
-                    <>
-                      1ヶ月コース
-                      <br />
-                      (計4回)
-                    </>
-                  }
-                  price={22000}
-                />
-                <PriceTableRow
-                  th={
-                    <>
-                      2ヶ月コース
-                      <br />
-                      (計8回)
-                    </>
-                  }
-                  price={42240}
-                  oldPrice={44000}
-                />
-                <PriceTableRow
-                  th={
-                    <>
-                      3ヶ月コース
-                      <br />
-                      (計12回)
-                    </>
-                  }
-                  price={60720}
-                  oldPrice={66000}
-                />
-              </PriceTable>
-              <p className="text-sm">※1回60分間のトレーニングとなります。</p>
-            </div>
+            <PriceTable notes={['1回60分間のトレーニングとなります。']}>
+              <PriceTableRow
+                th={
+                  <>
+                    1ヶ月コース
+                    <br />
+                    (計4回)
+                  </>
+                }
+                price={22000}
+              />
+              <PriceTableRow
+                th={
+                  <>
+                    2ヶ月コース
+                    <br />
+                    (計8回)
+                  </>
+                }
+                price={42240}
+                oldPrice={44000}
+              />
+              <PriceTableRow
+                th={
+                  <>
+                    3ヶ月コース
+                    <br />
+                    (計12回)
+                  </>
+                }
+                price={60720}
+                oldPrice={66000}
+              />
+            </PriceTable>
             <p className="text-red-500 font-bold">
               今ならお得な体験キャンペーンも実施中！
               <br />

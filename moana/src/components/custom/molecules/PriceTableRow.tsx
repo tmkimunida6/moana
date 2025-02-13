@@ -5,12 +5,14 @@ type PriceTableRowProps = {
   th: ReactNode
   price: number
   oldPrice?: number | undefined
+  campaign?: string
 }
 
 export default function PriceTableRow({
   th,
   price,
   oldPrice = undefined,
+  campaign,
 }: PriceTableRowProps) {
   return (
     <tr>
@@ -28,7 +30,8 @@ export default function PriceTableRow({
             </>
           )}
           <span className={oldPrice ? 'text-red-500' : ''}>
-            ￥{Number(price).toLocaleString()}
+            {campaign && <span className="text-sm block">{campaign}</span>}￥
+            {Number(price).toLocaleString()}
             <span className="text-xs"> (税込)</span>
           </span>
         </div>
