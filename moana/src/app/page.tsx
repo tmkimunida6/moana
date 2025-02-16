@@ -84,7 +84,7 @@ export default function Home() {
                   決まった回数通う必要もないので、ご自身のペースで続けていただけます。
                 </>
               }
-              imageUrl="/images/top/point2.jpg"
+              imageUrl="/images/top/point1.png"
             >
               <PriceTable
                 notes={[
@@ -116,7 +116,7 @@ export default function Home() {
                   何から始めれば良いかわからないという方もまずはお気軽にご相談ください。
                 </>
               }
-              imageUrl="/images/top/point2.jpg"
+              imageUrl="/images/top/point2.png"
             >
               <ul className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2">
                 <GridTextItem text="ボディメイク" bg="accent" />
@@ -143,10 +143,10 @@ export default function Home() {
                   完全予約制ですので、人目を気にすることなく運動に集中できます。
                 </>
               }
-              imageUrl="/images/top/point3.jpg"
+              imageUrl="/images/facility/training-space.png"
             >
               <div className="text-right">
-                <TextLink href="/trainer">
+                <TextLink href="/facility">
                   <IoChevronForward size="1em" />
                   施設紹介
                 </TextLink>

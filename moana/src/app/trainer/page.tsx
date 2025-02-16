@@ -17,7 +17,7 @@ export default function Trainer() {
       <div className="flex flex-col items-center gap-6 md:flex-row md:items-start">
         <div className="w-[70vw] aspect-[4/5] relative border border-brand-primary border-2 rounded-lg overflow-hidden max-w-[300px] md:shrink-0">
           <Image
-            src="/images/trainer/miki.jpg"
+            src="/images/trainer/miki.png"
             alt="パーソナルトレーナー MIKI"
             fill
             className="object-cover"
