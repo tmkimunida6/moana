@@ -11,27 +11,31 @@ export default function Facility() {
       <div className="grid gap-16 md:grid md:grid-cols-[repeat(2,1fr)] md:gap-x-6 gap-y-10">
         <FacilityBox
           title="トレーニングスペース"
-          image="training-space.jpg"
+          image="training-space.png"
           position="right"
         >
-          トレーニングスペースの説明が入ります。トレーニングスペースの説明が入ります。トレーニングスペースの説明が入ります。
+          モアナのトレーニングスペースはハワイをイメージした落ち着いた雰囲気になっています。
+          <br />
+          最新マシンも完備しているほか、ヨガやエアロビクスができるスペースもあります。
         </FacilityBox>
-        <FacilityBox title="外装" image="training-space.jpg" position="left">
-          外装の説明が入ります。外装の説明が入ります。外装の説明が入ります。
+        <FacilityBox title="外装" image="exterior.png" position="left">
+          白い建物にモアナの青いロゴが目印！駐車場も完備しているほか、お車でお気軽にお越しいただけます。
+          <br />
+          送迎も承っておりますので、お気軽にお問い合わせください。
         </FacilityBox>
-        <FacilityBox title="受付" image="training-space.jpg" position="right">
-          受付の説明が入ります。受付の説明が入ります。受付の説明が入ります。
+        <FacilityBox title="受付" image="counter.png" position="right">
+          トレーニングスペース脇に併設されている受付カウンターです。
+          <br />
+          カウンセリングや各種手続きを行う際はこちらで行います。
         </FacilityBox>
-        <FacilityBox
-          title="MOANAロゴ"
-          image="training-space.jpg"
-          position="left"
-        >
-          MOANAロゴの説明が入ります。MOANAロゴの説明が入ります。MOANAロゴの説明が入ります。
+        <FacilityBox title="MOANAロゴ" image="wall-logo.png" position="left">
+          受付の壁に描かれているモアナのロゴです。
+          <br />
+          ハワイの海をイメージした素敵なロゴでとても気に入っています！
         </FacilityBox>
         <FacilityBox
           title="InBody（体組成計）"
-          image="training-space.jpg"
+          image="inbody.png"
           position="right"
         >
           <>
@@ -41,7 +45,7 @@ export default function Facility() {
             <br />
             測定のみのご利用も可能ですので、お気軽にお問い合わせください。
             <span className="block text-right mt-4">
-              <TextLink href="https://inbody.co.jp/" openInNew>
+              <TextLink href="https://inbody.co.jp/learn/" openInNew>
                 <IoChevronForward />
                 InBodyについて詳しく
               </TextLink>

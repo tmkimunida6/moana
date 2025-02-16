@@ -13,14 +13,9 @@ export default function FacilityImage({
 }: FacilityImageProps) {
   return (
     <div
-      className={`w-[80vw] aspect-[4/3] relative border border-brand-primary border-2 overflow-hidden max-w-[600px] ${position === 'left' ? 'rounded-r-lg ml-[calc(50%-50vw-3px)]' : 'rounded-l-lg mr-[calc(50%-50vw-3px)]'} md:m-0 md:rounded-lg md:w-full`}
+      className={`w-[80vw] aspect-[3/2] relative border-brand-primary border-y-2 overflow-hidden max-w-[600px] md:border-2 ${position === 'left' ? 'rounded-r-lg ml-[calc(50%-50vw-3px)] border-r-2' : 'rounded-l-lg mr-[calc(50%-50vw)]'} md:m-0 md:rounded-lg md:w-full border-y-2 border-l-2`}
     >
-      <Image
-        src={`/images/facility/${src}`}
-        alt={alt}
-        fill
-        className="object-cover"
-      />
+      <Image src={`/images/facility/${src}`} alt={alt} fill className="cover" />
     </div>
   )
 }

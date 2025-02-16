@@ -57,7 +57,11 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
                 key={item.id}
                 className="flex items-center gap-4 p-4 border-[--brand-color-primary] w-full"
               >
-                <Link href={item.href} className="text-xl font-bold">
+                <Link
+                  href={item.href}
+                  className="text-xl font-bold"
+                  onClick={() => setOpen(false)}
+                >
                   {item.text}
                 </Link>
                 <IoChevronForward size={20} />

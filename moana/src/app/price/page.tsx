@@ -295,7 +295,7 @@ export default function Price() {
               <br />
               測定結果はその場ですぐにプリントしてお渡しいたします。
               <span className="block text-right mt-1">
-                <TextLink href="https://inbody.co.jp/" openInNew>
+                <TextLink href="https://inbody.co.jp/learn/" openInNew>
                   <IoChevronForward />
                   InBodyについて詳しく
                 </TextLink>

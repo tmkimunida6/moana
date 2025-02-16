@@ -91,7 +91,10 @@ export default function Home() {
                 今ならお得な体験キャンペーンも実施中！
                 <br className="md:hidden" />
                 詳しくは
-                <Link href="/price" className="text-brand-link underline">
+                <Link
+                  href="/price"
+                  className="text-brand-link underline hover:opacity-70"
+                >
                   料金詳細
                 </Link>
                 をご覧ください。

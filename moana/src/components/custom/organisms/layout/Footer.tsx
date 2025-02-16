@@ -15,7 +15,10 @@ export default function Footer() {
               key={item.id}
               className="border-brand-primary px-4 leading-[14px] first:pl-0 last:pr-0"
             >
-              <Link href={item.href} className="text-sm font-bold">
+              <Link
+                href={item.href}
+                className="text-sm font-bold hover:text-brand-primary"
+              >
                 {item.text}
               </Link>
             </li>
