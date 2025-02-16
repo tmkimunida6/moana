@@ -8,7 +8,7 @@ type PriceTableProps = {
 
 export default function PriceTable({ notes, children }: PriceTableProps) {
   return (
-    <div className="grid gap-1 w-full">
+    <div className="grid w-full gap-1">
       <table>
         <tbody>{children}</tbody>
       </table>

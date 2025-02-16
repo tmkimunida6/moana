@@ -1,5 +1,8 @@
 'use client'
 
+import Image from 'next/image'
+import Autoplay from 'embla-carousel-autoplay'
+import MvCarouselItem from './MvCarouselItem'
 import {
   Carousel,
   CarouselContent,
@@ -7,10 +10,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import Logo from '@/components/custom/atoms/Logo'
-import MvCarouselItem from './MvCarouselItem'
 import ZeroBanner from '@/components/custom/organisms/ZeroBanner'
-import Image from 'next/image'
-import Autoplay from 'embla-carousel-autoplay'
 
 export default function Mv() {
   return (
@@ -28,9 +28,9 @@ export default function Mv() {
     >
       <CarouselContent>
         <MvCarouselItem image="mv1.jpg">
-          <div className="absolute top-[88px] left-[50%] -translate-x-1/2 max-w-[400px] mx-auto pl-[120px] flex flex-col gap-6 items-end">
+          <div className="absolute left-[50%] top-[88px] mx-auto flex max-w-[400px] -translate-x-1/2 flex-col items-end gap-6 pl-[120px]">
             <Logo section="mv" />
-            <p className="text-xl font-bold text-white leading-[2] whitespace-nowrap">
+            <p className="whitespace-nowrap text-xl font-bold leading-[2] text-white">
               一緒だから目指せる、
               <br />
               完全プライベート空間で
@@ -40,7 +40,7 @@ export default function Mv() {
           </div>
         </MvCarouselItem>
         <MvCarouselItem image="mv2.jpg">
-          <div className="flex flex-col items-center gap-4 pt-6 px-4">
+          <div className="flex flex-col items-center gap-4 px-4 pt-6">
             <span className="text-xl font-bold text-brand-primary text-outline-white">
               <span className="font-moana text-[28px] leading-none">MOANA</span>
               なら
@@ -54,13 +54,13 @@ export default function Mv() {
           </div>
         </MvCarouselItem>
         <MvCarouselItem image="mv3.jpg">
-          <div className="flex flex-col items-center gap-4 pt-6 px-4">
+          <div className="flex flex-col items-center gap-4 px-4 pt-6">
             <div className="w-full max-w-[500px]">
-              <div className="bg-brand-primary px-4 py-2 rounded-sm text-white text-sm font-bold relative w-fit">
+              <div className="relative w-fit rounded-sm bg-brand-primary px-4 py-2 text-sm font-bold text-white">
                 いつまでも心身共に健康な
                 <br />
                 カラダづくりを応援します！
-                <div className="bg-brand-primary absolute top-[100%] left-[20%] -translate-x-1/2 w-[32px] h-[16px] [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                <div className="absolute left-[20%] top-[100%] h-[16px] w-[32px] -translate-x-1/2 bg-brand-primary [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
               </div>
             </div>
             <div className="flex flex-col items-center gap-2">
@@ -77,7 +77,7 @@ export default function Mv() {
                 いつでも毎回500円割引に！
               </span>
             </div>
-            <div className="w-full aspect-[358/138] max-w-[400px] relative">
+            <div className="relative aspect-[358/138] w-full max-w-[400px]">
               <Image
                 src="/images/top/coupon.png"
                 alt="プラチナムパスポート 毎回500円割引（60歳以上限定）"

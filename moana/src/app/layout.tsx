@@ -14,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <TypekitLoader />
-      <body className={`${notoSansJP.className} text-[18px] overflow-x-hidden`}>
+      <body className={`${notoSansJP.className} overflow-x-hidden text-[18px]`}>
         <Header />
-        <div className="px-4 pb-16 max-w-5xl mx-auto md:px-12 leading-[1.8]">
+        <div className="mx-auto max-w-5xl px-4 pb-16 leading-[1.8] md:px-12">
           {children}
         </div>
         <Footer />

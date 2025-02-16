@@ -10,8 +10,8 @@ export default function ContactTableRow({
   children,
 }: ContactTableRowProps) {
   return (
-    <li className="flex items-top">
-      <h4 className="font-bold text-left min-w-[90px] align-top">{title}</h4>
+    <li className="items-top flex">
+      <h4 className="min-w-[90px] text-left align-top font-bold">{title}</h4>
       {children}
     </li>
   )

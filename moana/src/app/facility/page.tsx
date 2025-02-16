@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
+import { IoChevronForward } from 'react-icons/io5'
 import CvButton from '@/components/custom/atoms/CvButton'
 import TextLink from '@/components/custom/atoms/TextLink'
 import PageHeading from '@/components/custom/molecules/PageHeading'
 import FacilityBox from '@/components/feature/facility/FacilityBox'
-import { IoChevronForward } from 'react-icons/io5'
 
 export const metadata: Metadata = {
   title: '施設紹介 | MOANA Personal Training Gym',
@@ -15,7 +15,7 @@ export default function Facility() {
   return (
     <>
       <PageHeading title="施設紹介" subtitle="Facility" />
-      <div className="grid gap-16 md:grid md:grid-cols-[repeat(2,1fr)] md:gap-x-6 gap-y-10">
+      <div className="grid gap-16 gap-y-10 md:grid md:grid-cols-[repeat(2,1fr)] md:gap-x-6">
         <FacilityBox
           title="トレーニングスペース"
           image="training-space.png"
@@ -46,12 +46,12 @@ export default function Facility() {
           position="right"
         >
           <>
-            "モアナでは、オリンピック選手や一流アスリートも活用している体組成計を設置しています。
+            モアナでは、オリンピック選手や一流アスリートも活用している体組成計を設置しています。
             <br />
             部位ごとに筋肉量・体脂肪量を測定でき、日々のトレーニングの効果を確認いただけます。
             <br />
             測定のみのご利用も可能ですので、お気軽にお問い合わせください。
-            <span className="block text-right mt-4">
+            <span className="mt-4 block text-right">
               <TextLink href="https://inbody.co.jp/learn/" openInNew>
                 <IoChevronForward />
                 InBodyについて詳しく
@@ -60,7 +60,7 @@ export default function Facility() {
           </>
         </FacilityBox>
       </div>
-      <div className="text-center mt-16">
+      <div className="mt-16 text-center">
         <CvButton />
       </div>
     </>

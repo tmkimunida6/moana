@@ -1,5 +1,5 @@
-import BoxWithArrow from '@/components/custom/atoms/BoxWithArrow'
 import { ReactNode } from 'react'
+import BoxWithArrow from '@/components/custom/atoms/BoxWithArrow'
 
 type StepBoxProps = {
   index: number
@@ -18,13 +18,13 @@ export default function StepBox({
 }: StepBoxProps) {
   return (
     <div className="flex flex-col">
-      <span className="text-brand-accent font-bold">STEP{index}</span>
+      <span className="font-bold text-brand-accent">STEP{index}</span>
       <BoxWithArrow bg="white" noArrow={noArrow}>
-        <h3 className="font-bold text-center text-brand-accent md:text-xl">
+        <h3 className="text-center font-bold text-brand-accent md:text-xl">
           {title}
         </h3>
         {desc && <p className="text-base md:text-lg">{desc}</p>}
-        {children || <></>}
+        {children || null}
       </BoxWithArrow>
     </div>
   )
