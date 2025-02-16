@@ -1,14 +1,15 @@
+/* eslint-disable no-unused-vars */
+
 'use client'
 
 import * as React from 'react'
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
 
+import { IoChevronBack, IoChevronForward } from 'react-icons/io5'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
-import { IoChevronBack, IoChevronForward } from 'react-icons/io5'
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

@@ -2,6 +2,13 @@
 
 // MobileNav.tsx
 import { useState } from 'react'
+import { TiWaves } from 'react-icons/ti'
+import Link from 'next/link'
+import { IoChevronForward } from 'react-icons/io5'
+import Image from 'next/image'
+import Logo from '../atoms/Logo'
+import SnsIconList from './SnsIconList'
+import { Button } from '@/components/ui/button'
 import {
   Sheet,
   SheetContent,
@@ -9,13 +16,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet'
-import { Button } from '@/components/ui/button'
-import { TiWaves } from 'react-icons/ti'
-import Link from 'next/link'
-import { IoChevronForward } from 'react-icons/io5'
-import Image from 'next/image'
-import Logo from '../atoms/Logo'
-import SnsIconList from './SnsIconList'
 
 type MobileNavProps = {
   menuItems: Array<{
@@ -36,7 +36,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="top" className="px-4 pt-0 pb-6 bg-white">
+      <SheetContent side="top" className="bg-white px-4 pb-6 pt-0">
         <SheetTitle className="py-3">
           <Link href="/">
             <Logo section="header" />
@@ -55,7 +55,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
             {menuItems.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center gap-4 p-4 border-[--brand-color-primary] w-full"
+                className="flex w-full items-center gap-4 border-[--brand-color-primary] p-4"
               >
                 <Link
                   href={item.href}
@@ -68,7 +68,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
               </div>
             ))}
           </div>
-          <div className="flex items-center px-4 mt-6 gap-6">
+          <div className="mt-6 flex items-center gap-6 px-4">
             <SnsIconList />
           </div>
         </div>

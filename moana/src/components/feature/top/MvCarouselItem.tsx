@@ -1,20 +1,24 @@
+import { CSSProperties, ReactNode } from 'react'
 import { CarouselItem } from '@/components/ui/carousel'
-import { ReactNode } from 'react'
 
 type MvCarouselItemProps = {
-  index: number
+  image: string
   children: ReactNode
 }
 
 export default function MvCarouselItem({
-  index,
+  image,
   children,
 }: MvCarouselItemProps) {
-  const image = `mv${index}.jpg`
+  const cssProperties = {
+    '--image-url': `url(/images/top/${image})`,
+  } as CSSProperties
+
   return (
     <CarouselItem className="max-w-[928px]">
       <div
-        className={`w-full h-[400px] md:h-[500px] relative bg-[url(/images/top/${image})] bg-[auto_100%] bg-[top_center] bg-no-repeat`}
+        style={cssProperties}
+        className={`relative h-[400px] w-full bg-[image:var(--image-url)] bg-[auto_100%] bg-[top_center] bg-no-repeat md:h-[500px]`}
       >
         {children}
       </div>

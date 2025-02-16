@@ -1,13 +1,13 @@
-import { menuItems } from '@/constants/menuItems'
 import Link from 'next/link'
 import Logo from '../../atoms/Logo'
 import Contact from '../Contact'
 import SnsIconList from '../../molecules/SnsIconList'
+import { menuItems } from '@/constants/menuItems'
 
 export default function Footer() {
   return (
     <footer className="bg-white px-4">
-      <ul className="flex items-center justify-center divide-x py-8 border-b border-brand-primary md:">
+      <ul className="md: flex items-center justify-center divide-x border-b border-brand-primary py-8">
         {menuItems
           .filter((item) => !item.headerOnly)
           .map((item) => (
@@ -24,7 +24,7 @@ export default function Footer() {
             </li>
           ))}
       </ul>
-      <div className="grid gap-8 py-8 max-w-[660px] mx-auto">
+      <div className="mx-auto grid max-w-[660px] gap-8 py-8">
         <div className="flex justify-center">
           <Logo section="footer" />
         </div>
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex items-center justify-center gap-6">
           <SnsIconList />
         </div>
-        <span className="text-[10px] text-gray-500 text-center">
+        <span className="text-center text-[10px] text-gray-500">
           Copyright © MOANA Personal Training Gym All Rights Reserved.
         </span>
       </div>

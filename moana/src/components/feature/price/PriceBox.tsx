@@ -1,7 +1,7 @@
-import HeadingWithUnderline from '@/components/custom/atoms/HeadingWIthUnderline'
-import { Badge } from '@/components/ui/badge'
 import { nanoid } from 'nanoid'
 import { ReactNode } from 'react'
+import HeadingWithUnderline from '@/components/custom/atoms/HeadingWIthUnderline'
+import { Badge } from '@/components/ui/badge'
 
 type PriceBoxProps = {
   title: string
@@ -17,7 +17,7 @@ export default function PriceBox({
   children,
 }: PriceBoxProps) {
   return (
-    <div className="flex flex-col items-start gap-4 bg-white p-4 rounded-lg">
+    <div className="flex flex-col items-start gap-4 rounded-lg bg-white p-4">
       <HeadingWithUnderline title={title} />
       <div className="flex gap-2">
         {badges.map((badge) => {

@@ -13,7 +13,7 @@ export default function BoxWithArrow({
 }: BoxWithArrowProps) {
   return (
     <div
-      className={`rounded-sm flex flex-col gap-2 justify-center relative ${
+      className={`relative flex flex-col justify-center gap-2 rounded-sm ${
         bg === 'accent'
           ? 'bg-brand-accent p-2'
           : 'border border-2 border-brand-accent bg-white p-4 md:flex-1'
@@ -22,9 +22,9 @@ export default function BoxWithArrow({
       {children}
       {!noArrow && (
         <div
-          className={`bg-brand-accent absolute top-[100%] left-[50%] -translate-x-1/2 w-[48px] h-[16px] [clip-path:polygon(0_0,100%_0,50%_100%)] ${
+          className={`absolute left-[50%] top-[100%] h-[16px] w-[48px] -translate-x-1/2 bg-brand-accent [clip-path:polygon(0_0,100%_0,50%_100%)] ${
             bg !== 'accent'
-              ? 'md:[clip-path:polygon(0_0,100%_50%,0_100%)] md:w-[16px] md:h-[48px] md:top-[50%] md:left-[100%] md:-translate-y-1/2 md:translate-x-0'
+              ? 'md:left-[100%] md:top-[50%] md:h-[48px] md:w-[16px] md:-translate-y-1/2 md:translate-x-0 md:[clip-path:polygon(0_0,100%_50%,0_100%)]'
               : ''
           }`}
         ></div>

@@ -21,14 +21,14 @@ export default function BenefitBox({
     )
 
   return (
-    <div className="bg-white rounded-md p-4 flex items-center gap-6 max-w-[400px] mx-auto w-full md:mx-0">
-      <span className="text-md font-bold relative after:absolute after:bottom-1 after:left-0 after:w-full after:h-[4px] after:bg-[var(--brand-color-primary-50)]">
+    <div className="mx-auto flex w-full max-w-[400px] items-center gap-6 rounded-md bg-white p-4 md:mx-0">
+      <span className="text-md relative font-bold after:absolute after:bottom-1 after:left-0 after:h-[4px] after:w-full after:bg-[var(--brand-color-primary-50)]">
         特典
-        <span className="text-brand-primary text-[40px] text-outline-white leading-none">
+        <span className="text-[40px] leading-none text-brand-primary text-outline-white">
           {index}
         </span>
       </span>
-      <div className="flex items-center gap-2 text-md font-bold">
+      <div className="text-md flex items-center gap-2 font-bold">
         {icon}
         <span className="flex items-baseline gap-1">{children}</span>
       </div>

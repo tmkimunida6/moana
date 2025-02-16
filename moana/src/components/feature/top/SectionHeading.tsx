@@ -10,9 +10,9 @@ export default function SectionHeading({
   subtext,
 }: SectionHeadingProps) {
   return (
-    <h2 className="text-4xl text-center font-bold mb-8 leading-[1.5]">
+    <h2 className="mb-8 text-center text-4xl font-bold leading-[1.5]">
       {children}
-      <span className="font-moana text-brand-primary text-2xl block">
+      <span className="block font-moana text-2xl text-brand-primary">
         ~ {subtext} ~
       </span>
     </h2>

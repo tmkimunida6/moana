@@ -1,3 +1,7 @@
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { IoCall, IoChevronForward, IoMail } from 'react-icons/io5'
 import CvButton from '@/components/custom/atoms/CvButton'
 import GridTextItem from '@/components/custom/atoms/GridTextItem'
 import TextLink from '@/components/custom/atoms/TextLink'
@@ -8,10 +12,13 @@ import HighlightedText from '@/components/feature/top/HighlightedText'
 import PointBox from '@/components/feature/top/PointBox'
 import SectionHeading from '@/components/feature/top/SectionHeading'
 import StepBox from '@/components/feature/top/StepBox'
-import Image from 'next/image'
-import Link from 'next/link'
-import { IoCall, IoChevronForward, IoMail } from 'react-icons/io5'
 import Mv from '@/components/feature/top/Mv'
+
+export const metadata: Metadata = {
+  title: 'MOANA Personal Training Gym',
+  description:
+    'モアナは、運動が苦手な方やご高齢の方にこそぴったりなトレーニングジム。お客様ひとりひとりに合わせた最適なメニューを提案し、お客様の健康と目標達成を全力でサポートします。普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？',
+}
 
 export default function Home() {
   return (
@@ -22,13 +29,13 @@ export default function Home() {
       <div className="grid gap-20">
         <section>
           <SectionHeading subtext="about">
-            <span className="font-moana text-brand-primary text-[38px] leading-none">
+            <span className="font-moana text-[38px] leading-none text-brand-primary">
               Moana
             </span>
             について
           </SectionHeading>
-          <div className="max-w-[660px] mx-auto">
-            <p className="flex flex-col gap-2 mt-8 md:mt-10 md:items-center">
+          <div className="mx-auto max-w-[660px]">
+            <p className="mt-8 flex flex-col gap-2 md:mt-10 md:items-center">
               <HighlightedText>
                 <span className="text-brand-primary">運動が苦手な方</span>や
                 <span className="text-brand-primary">ご高齢の方</span>も大歓迎！
@@ -54,14 +61,14 @@ export default function Home() {
               普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？
             </p>
           </div>
-          <div className="text-center mt-16">
+          <div className="mt-16 text-center">
             <CvButton />
           </div>
         </section>
 
         <section>
           <SectionHeading subtext="point">
-            <span className="text-brand-primary text-[86px] text-outline-white leading-none">
+            <span className="text-[86px] leading-none text-brand-primary text-outline-white">
               3
             </span>
             つのポイント
@@ -77,7 +84,7 @@ export default function Home() {
                   決まった回数通う必要もないので、ご自身のペースで続けていただけます。
                 </>
               }
-              imageUrl="/images/top/point2.jpg"
+              imageUrl="/images/top/point1.png"
             >
               <PriceTable
                 notes={[
@@ -86,7 +93,7 @@ export default function Home() {
               >
                 <PriceTableRow th={<>60分 ×1</>} price={5500} />
               </PriceTable>
-              <p className="text-red-500 font-bold">
+              <p className="font-bold text-red-500">
                 今ならお得な体験キャンペーンも実施中！
                 <br className="md:hidden" />
                 詳しくは
@@ -109,7 +116,7 @@ export default function Home() {
                   何から始めれば良いかわからないという方もまずはお気軽にご相談ください。
                 </>
               }
-              imageUrl="/images/top/point2.jpg"
+              imageUrl="/images/top/point2.png"
             >
               <ul className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2">
                 <GridTextItem text="ボディメイク" bg="accent" />
@@ -136,10 +143,10 @@ export default function Home() {
                   完全予約制ですので、人目を気にすることなく運動に集中できます。
                 </>
               }
-              imageUrl="/images/top/point3.jpg"
+              imageUrl="/images/facility/training-space.png"
             >
               <div className="text-right">
-                <TextLink href="/trainer">
+                <TextLink href="/facility">
                   <IoChevronForward size="1em" />
                   施設紹介
                 </TextLink>
@@ -160,7 +167,7 @@ export default function Home() {
                 </>
               }
             >
-              <ul className="text-base grid gap-1 mt-2">
+              <ul className="mt-2 grid gap-1 text-base">
                 <li>
                   <TextLink href="#">
                     <IoMail size={24} className="text-brand-primary" />
@@ -240,7 +247,7 @@ export default function Home() {
 
         <section>
           <SectionHeading subtext="contact">お問い合わせ</SectionHeading>
-          <div className="grid gap-8 max-w-[660px] mx-auto md:bg-white md:px-10 md:py-6 md:rounded-lg">
+          <div className="mx-auto grid max-w-[660px] gap-8 md:rounded-lg md:bg-white md:px-10 md:py-6">
             <div className="flex items-center gap-4">
               <Image
                 src="/images/logo-circle.svg"
@@ -259,7 +266,7 @@ export default function Home() {
                 <br />
                 お気軽にお問い合わせください。
               </p>
-              <ul className="text-base grid gap-1 mt-2">
+              <ul className="mt-2 grid gap-1 text-base">
                 <li>
                   <TextLink href="#">
                     <IoMail size={24} className="text-brand-primary" />
@@ -287,7 +294,7 @@ export default function Home() {
             style={{ border: 0 }}
             allowFullScreen={true}
             loading="lazy"
-            className="w-full h-[300px] mt-10 md:h-[400px]"
+            className="mt-10 h-[300px] w-full md:h-[400px]"
           ></iframe>
         </section>
       </div>

@@ -6,7 +6,6 @@ type PriceTableRowProps = {
   price: number
   oldPrice?: number | undefined
   campaign?: string
-  isBorder?: boolean
 }
 
 export default function PriceTableRow({
@@ -14,14 +13,13 @@ export default function PriceTableRow({
   price,
   oldPrice = undefined,
   campaign,
-  isBorder,
 }: PriceTableRowProps) {
   return (
     <tr className="border">
-      <th className="text-base bg-[var(--brand-color-primary-50)] py-4 px-2 w-[35%]">
+      <th className="w-[35%] bg-[var(--brand-color-primary-50)] px-2 py-4 text-base">
         {th}
       </th>
-      <td className="text-xl font-bold text-center bg-neutral-50 py-4 px-2 w-[75%]">
+      <td className="w-[75%] bg-neutral-50 px-2 py-4 text-center text-xl font-bold">
         <div className="flex flex-col items-center">
           {oldPrice && (
             <>
@@ -32,7 +30,7 @@ export default function PriceTableRow({
             </>
           )}
           <span className={oldPrice ? 'text-red-500' : ''}>
-            {campaign && <span className="text-sm block">{campaign}</span>}￥
+            {campaign && <span className="block text-sm">{campaign}</span>}￥
             {Number(price).toLocaleString()}
             <span className="text-xs"> (税込)</span>
           </span>

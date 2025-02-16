@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+import { IoChevronForward, IoPeopleSharp, IoPersonSharp } from 'react-icons/io5'
 import CvButton from '@/components/custom/atoms/CvButton'
 import TextLink from '@/components/custom/atoms/TextLink'
 import PageHeading from '@/components/custom/molecules/PageHeading'
@@ -7,21 +9,26 @@ import ZeroBanner from '@/components/custom/organisms/ZeroBanner'
 import BenefitBox from '@/components/feature/price/BenefitBox'
 import PriceBox from '@/components/feature/price/PriceBox'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { IoChevronForward, IoPeopleSharp, IoPersonSharp } from 'react-icons/io5'
+
+export const metadata: Metadata = {
+  title: '料金案内 | MOANA Personal Training Gym',
+  description:
+    'モアナの料金システムはとっても簡単。お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。お一人様はもちろん、お二人でのトレーニングコースもご用意しているほか、体験コースや測定のみも可能ですのでお気軽にお立ち寄りください。',
+}
 
 export default function Price() {
   return (
     <>
       <PageHeading title="料金案内" subtitle="Price" />
       <div className="grid gap-10">
-        <p className="max-w-[660px] mx-auto md:text-center">
+        <p className="mx-auto max-w-[660px] md:text-center">
           モアナの料金システムはとっても簡単。
           <br />
           お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。
         </p>
         <ZeroBanner />
         <div className="grid gap-6">
-          <h2 className="text-2xl font-bold text-center">料金詳細</h2>
+          <h2 className="text-center text-2xl font-bold">料金詳細</h2>
           <p className="md:text-center">
             お一人様はもちろん、お二人での参加も可能です。お友達やご夫婦でお気軽にご参加ください。
           </p>
@@ -294,7 +301,7 @@ export default function Price() {
               高機能体組成「InBody」による、お身体の測定のみとなります。
               <br />
               測定結果はその場ですぐにプリントしてお渡しいたします。
-              <span className="block text-right mt-1">
+              <span className="mt-1 block text-right">
                 <TextLink href="https://inbody.co.jp/learn/" openInNew>
                   <IoChevronForward />
                   InBodyについて詳しく
@@ -307,11 +314,11 @@ export default function Price() {
             <PriceTableRow th={<>1回</>} price={550} />
           </PriceTable>
         </PriceBox>
-        <div className="grid gap-4 mt-10">
-          <h2 className="text-2xl font-bold text-center text-brand-accent">
+        <div className="mt-10 grid gap-4">
+          <h2 className="text-center text-2xl font-bold text-brand-accent">
             60歳以上の方限定！
           </h2>
-          <div className="flex flex-col gap-4 md:flex-row justify-center">
+          <div className="flex flex-col justify-center gap-4 md:flex-row">
             <BenefitBox index={1} iconName="pig">
               毎回<strong className="text-2xl">500円割引</strong>
             </BenefitBox>
@@ -321,7 +328,7 @@ export default function Price() {
           </div>
         </div>
       </div>
-      <div className="text-center mt-16">
+      <div className="mt-16 text-center">
         <CvButton />
       </div>
     </>
