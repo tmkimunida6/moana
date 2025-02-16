@@ -17,7 +17,7 @@ export default function PriceBox({
   children,
 }: PriceBoxProps) {
   return (
-    <div className="flex flex-col items-start gap-4">
+    <div className="flex flex-col items-start gap-4 bg-white p-4 rounded-lg">
       <HeadingWithUnderline title={title} />
       <div className="flex gap-2">
         {badges.map((badge) => {
@@ -29,7 +29,7 @@ export default function PriceBox({
           )
         })}
       </div>
-      <p>{desc}</p>
+      <p className="w-full">{desc}</p>
       {children}
     </div>
   )

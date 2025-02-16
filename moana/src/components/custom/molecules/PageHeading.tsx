@@ -5,7 +5,7 @@ type PageHeadingProps = {
 
 export default function PageHeading({ title, subtitle }: PageHeadingProps) {
   return (
-    <div className="flex flex-col items-center bg-white mx-[calc(50%-50vw)] mb-10 py-10">
+    <div className="flex flex-col items-center bg-white mx-[calc(50%-50vw)] mb-10 py-10 gap-6 md:mb-16">
       <h1 className="text-4xl font-bold">{title}</h1>
       <span className="font-moana text-brand-primary text-3xl">{subtitle}</span>
     </div>

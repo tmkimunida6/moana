@@ -27,7 +27,7 @@ export default function Mv() {
       className="mx-[calc(50%-50vw)]"
     >
       <CarouselContent>
-        <MvCarouselItem image="mv1.jpg">
+        <MvCarouselItem index={1}>
           <div className="absolute top-[88px] left-[50%] -translate-x-1/2 max-w-[400px] mx-auto pl-[120px] flex flex-col gap-6 items-end">
             <Logo section="mv" />
             <p className="text-xl font-bold text-white leading-[2] whitespace-nowrap">
@@ -39,7 +39,7 @@ export default function Mv() {
             </p>
           </div>
         </MvCarouselItem>
-        <MvCarouselItem image="mv2.jpg">
+        <MvCarouselItem index={2}>
           <div className="flex flex-col items-center gap-4 pt-6 px-4">
             <span className="text-xl font-bold text-brand-primary text-outline-white">
               <span className="font-moana text-[28px] leading-none">MOANA</span>
@@ -53,7 +53,7 @@ export default function Mv() {
             </p>
           </div>
         </MvCarouselItem>
-        <MvCarouselItem image="mv3.jpg">
+        <MvCarouselItem index={3}>
           <div className="flex flex-col items-center gap-4 pt-6 px-4">
             <div className="w-full max-w-[500px]">
               <div className="bg-brand-primary px-4 py-2 rounded-sm text-white text-sm font-bold relative w-fit">

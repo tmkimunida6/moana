@@ -2,14 +2,15 @@ import { CarouselItem } from '@/components/ui/carousel'
 import { ReactNode } from 'react'
 
 type MvCarouselItemProps = {
-  image: string
+  index: number
   children: ReactNode
 }
 
 export default function MvCarouselItem({
-  image,
+  index,
   children,
 }: MvCarouselItemProps) {
+  const image = `mv${index}.jpg`
   return (
     <CarouselItem className="max-w-[928px]">
       <div

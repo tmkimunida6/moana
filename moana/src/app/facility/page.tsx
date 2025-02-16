@@ -8,7 +8,7 @@ export default function Facility() {
   return (
     <>
       <PageHeading title="施設紹介" subtitle="Facility" />
-      <div className="grid gap-16">
+      <div className="grid gap-16 md:grid md:grid-cols-[repeat(2,1fr)] md:gap-x-6 gap-y-10">
         <FacilityBox
           title="トレーニングスペース"
           image="training-space.jpg"
@@ -48,9 +48,9 @@ export default function Facility() {
             </span>
           </>
         </FacilityBox>
-        <div className="text-center">
-          <CvButton />
-        </div>
+      </div>
+      <div className="text-center mt-16">
+        <CvButton />
       </div>
     </>
   )

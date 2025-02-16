@@ -14,13 +14,15 @@ export default function Price() {
     <>
       <PageHeading title="料金案内" subtitle="Price" />
       <div className="grid gap-10">
-        <p>
-          モアナの料金システムはとっても簡単。お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。
+        <p className="max-w-[660px] mx-auto md:text-center">
+          モアナの料金システムはとっても簡単。
+          <br />
+          お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。
         </p>
         <ZeroBanner />
         <div className="grid gap-6">
           <h2 className="text-2xl font-bold text-center">料金詳細</h2>
-          <p>
+          <p className="md:text-center">
             お一人様はもちろん、お二人での参加も可能です。お友達やご夫婦でお気軽にご参加ください。
           </p>
         </div>
@@ -283,39 +285,43 @@ export default function Price() {
               </PriceTable>
             </PriceBox>
           </TabsContent>
-          <PriceBox
-            title="InBody測定"
-            badges={['体組成計', '測定のみ', '体験']}
-            desc={
-              <>
-                高機能体組成「InBody」による、お身体の測定のみとなります。
-                <br />
-                測定結果はその場ですぐにプリントしてお渡しいたします。
-                <span className="block text-right mt-1">
-                  <TextLink href="https://inbody.co.jp/" openInNew>
-                    <IoChevronForward />
-                    InBodyについて詳しく
-                  </TextLink>
-                </span>
-              </>
-            }
-          >
-            <PriceTable>
-              <PriceTableRow th={<>1回</>} price={550} />
-            </PriceTable>
-          </PriceBox>
         </Tabs>
-        <div className="grid gap-4">
+        <PriceBox
+          title="InBody測定"
+          badges={['体組成計', '測定のみ', '体験']}
+          desc={
+            <>
+              高機能体組成「InBody」による、お身体の測定のみとなります。
+              <br />
+              測定結果はその場ですぐにプリントしてお渡しいたします。
+              <span className="block text-right mt-1">
+                <TextLink href="https://inbody.co.jp/" openInNew>
+                  <IoChevronForward />
+                  InBodyについて詳しく
+                </TextLink>
+              </span>
+            </>
+          }
+        >
+          <PriceTable>
+            <PriceTableRow th={<>1回</>} price={550} />
+          </PriceTable>
+        </PriceBox>
+        <div className="grid gap-4 mt-10">
           <h2 className="text-2xl font-bold text-center text-brand-accent">
             60歳以上の方限定！
           </h2>
-          <BenefitBox index={1} iconName="pig">
-            毎回<strong className="text-2xl">500円割引</strong>
-          </BenefitBox>
-          <BenefitBox index={2} iconName="car">
-            (初回のみ)<strong className="text-2xl">送迎無料</strong>
-          </BenefitBox>
+          <div className="flex flex-col gap-4 md:flex-row justify-center">
+            <BenefitBox index={1} iconName="pig">
+              毎回<strong className="text-2xl">500円割引</strong>
+            </BenefitBox>
+            <BenefitBox index={2} iconName="car">
+              (初回のみ)<strong className="text-2xl">送迎無料</strong>
+            </BenefitBox>
+          </div>
         </div>
+      </div>
+      <div className="text-center mt-16">
         <CvButton />
       </div>
     </>

@@ -10,15 +10,15 @@ export default function PriceTable({ notes, children }: PriceTableProps) {
   return (
     <div className="grid gap-1 w-full">
       <table>
-        <tbody className="divide-y">{children}</tbody>
+        <tbody>{children}</tbody>
       </table>
       {notes &&
         notes.length &&
-        notes.map(() => {
+        notes.map((note) => {
           const id = nanoid()
           return (
-            <p key={id} className="text-sm">
-              ※{notes}
+            <p key={id} className="text-sm md:text-base">
+              ※{note}
             </p>
           )
         })}

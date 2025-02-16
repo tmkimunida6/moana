@@ -17,11 +17,13 @@ export default function StepBox({
   children,
 }: StepBoxProps) {
   return (
-    <div>
+    <div className="flex flex-col">
       <span className="text-brand-accent font-bold">STEP{index}</span>
       <BoxWithArrow bg="white" noArrow={noArrow}>
-        <h3 className="font-bold text-center text-brand-accent">{title}</h3>
-        {desc && <p className="text-base">{desc}</p>}
+        <h3 className="font-bold text-center text-brand-accent md:text-xl">
+          {title}
+        </h3>
+        {desc && <p className="text-base md:text-lg">{desc}</p>}
         {children || <></>}
       </BoxWithArrow>
     </div>

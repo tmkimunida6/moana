@@ -7,13 +7,13 @@ import SnsIconList from '../../molecules/SnsIconList'
 export default function Footer() {
   return (
     <footer className="bg-white px-4">
-      <ul className="flex items-center justify-center divide-x py-8 border-b border-brand-primary">
+      <ul className="flex items-center justify-center divide-x py-8 border-b border-brand-primary md:">
         {menuItems
           .filter((item) => !item.headerOnly)
           .map((item) => (
             <li
               key={item.id}
-              className="border-brand-primary px-4 leading-[14px]"
+              className="border-brand-primary px-4 leading-[14px] first:pl-0 last:pr-0"
             >
               <Link href={item.href} className="text-sm font-bold">
                 {item.text}
@@ -21,7 +21,7 @@ export default function Footer() {
             </li>
           ))}
       </ul>
-      <div className="grid gap-8 py-8">
+      <div className="grid gap-8 py-8 max-w-[660px] mx-auto">
         <div className="flex justify-center">
           <Logo section="footer" />
         </div>

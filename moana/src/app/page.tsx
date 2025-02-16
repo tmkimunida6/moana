@@ -12,6 +12,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { IoCall, IoChevronForward, IoMail } from 'react-icons/io5'
 import Mv from '@/components/feature/top/Mv'
+import InstagramEmbed from '@/components/feature/top/InstagramEmbed'
 
 export default function Home() {
   return (
@@ -27,24 +28,33 @@ export default function Home() {
             </span>
             について
           </SectionHeading>
-          <p className="flex flex-col gap-2 mt-8">
-            <HighlightedText>
-              <span className="text-brand-primary">運動が苦手な方</span>や
-              <span className="text-brand-primary">ご高齢の方</span>も大歓迎！
-            </HighlightedText>
-            <HighlightedText>
-              <span className="text-brand-primary">お客様ひとりひとり</span>
-              に寄り添う
-            </HighlightedText>
-            <HighlightedText>パーソナルトレーニングジムです。</HighlightedText>
-          </p>
-          <p className="mt-4 leading-[1.8]">
-            モアナは、運動が苦手な方やご高齢の方にこそぴったりなトレーニングジム。
-            <br />
-            お客様ひとりひとりに合わせた最適なメニューを提案し、お客様の健康と目標達成を全力でサポートします。
-            <br />
-            普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？
-          </p>
+          <div className="max-w-[660px] mx-auto">
+            <p className="flex flex-col gap-2 mt-8 md:mt-10 md:items-center">
+              <HighlightedText>
+                <span className="text-brand-primary">運動が苦手な方</span>や
+                <span className="text-brand-primary">ご高齢の方</span>も大歓迎！
+              </HighlightedText>
+              <HighlightedText>
+                <span className="text-brand-primary">お客様ひとりひとり</span>
+                に寄り添う
+                <span className="hidden md:inline">
+                  パーソナルトレーニングジムです。
+                </span>
+              </HighlightedText>
+              <span className="md:hidden">
+                <HighlightedText>
+                  パーソナルトレーニングジムです。
+                </HighlightedText>
+              </span>
+            </p>
+            <p className="mt-4 md:mt-8">
+              モアナは、運動が苦手な方やご高齢の方にこそぴったりなトレーニングジム。
+              <br />
+              お客様ひとりひとりに合わせた最適なメニューを提案し、お客様の健康と目標達成を全力でサポートします。
+              <br />
+              普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？
+            </p>
+          </div>
           <div className="text-center mt-16">
             <CvButton />
           </div>
@@ -57,7 +67,7 @@ export default function Home() {
             </span>
             つのポイント
           </SectionHeading>
-          <div className="grid gap-16">
+          <div className="grid gap-16 md:gap-10">
             <PointBox
               index={1}
               title="わかりやすい料金体系"
@@ -70,43 +80,16 @@ export default function Home() {
               }
               imageUrl="/images/top/point2.jpg"
             >
-              <PriceTable notes={['1回60分間のトレーニングとなります。']}>
-                <PriceTableRow
-                  th={
-                    <>
-                      1ヶ月コース
-                      <br />
-                      (計4回)
-                    </>
-                  }
-                  price={22000}
-                />
-                <PriceTableRow
-                  th={
-                    <>
-                      2ヶ月コース
-                      <br />
-                      (計8回)
-                    </>
-                  }
-                  price={42240}
-                  oldPrice={44000}
-                />
-                <PriceTableRow
-                  th={
-                    <>
-                      3ヶ月コース
-                      <br />
-                      (計12回)
-                    </>
-                  }
-                  price={60720}
-                  oldPrice={66000}
-                />
+              <PriceTable
+                notes={[
+                  'パーソナルトレーニング1ヶ月コース契約の場合の1回あたりの料金',
+                ]}
+              >
+                <PriceTableRow th={<>60分 ×1</>} price={5500} />
               </PriceTable>
               <p className="text-red-500 font-bold">
                 今ならお得な体験キャンペーンも実施中！
-                <br />
+                <br className="md:hidden" />
                 詳しくは
                 <Link href="/price" className="text-brand-link underline">
                   料金詳細
@@ -165,7 +148,7 @@ export default function Home() {
 
         <section>
           <SectionHeading subtext="flow">入会までの流れ</SectionHeading>
-          <div className="grid gap-6">
+          <div className="grid gap-6 md:grid-cols-[repeat(2,1fr)] md:gap-10">
             <StepBox
               index={1}
               title="お問い合わせ"
@@ -175,7 +158,7 @@ export default function Home() {
                 </>
               }
             >
-              <ul className="text-base grid gap-1">
+              <ul className="text-base grid gap-1 mt-2">
                 <li>
                   <TextLink href="#">
                     <IoMail size={24} className="text-brand-primary" />
@@ -255,7 +238,7 @@ export default function Home() {
 
         <section>
           <SectionHeading subtext="contact">お問い合わせ</SectionHeading>
-          <div className="grid gap-8">
+          <div className="grid gap-8 max-w-[660px] mx-auto md:bg-white md:px-10 md:py-6 md:rounded-lg">
             <div className="flex items-center gap-4">
               <Image
                 src="/images/logo-circle.svg"
@@ -263,7 +246,9 @@ export default function Home() {
                 width={72}
                 height={63}
               />
-              <h3 className="font-bold ">MOANA パーソナルトレーニングジム</h3>
+              <h3 className="font-bold md:text-xl">
+                MOANA パーソナルトレーニングジム
+              </h3>
             </div>
             <Contact />
             <div>
@@ -292,15 +277,16 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6824330145155!2d134.6472396!3d34.864206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1e413d52713%3A0xcb3541d250ab516!2zTU9BTkEg44OR44O844K944OK44Or44OI44Os44O844OL44Oz44Kw44K444Og!5e0!3m2!1sja!2sjp!4v1739275154702!5m2!1sja!2sjp"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-            ></iframe>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6824330145155!2d134.6472396!3d34.864206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e1e413d52713%3A0xcb3541d250ab516!2zTU9BTkEg44OR44O844K944OK44Or44OI44Os44O844OL44Oz44Kw44K444Og!5e0!3m2!1sja!2sjp!4v1739275154702!5m2!1sja!2sjp"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            className="w-full h-[300px] mt-10 md:h-[400px]"
+          ></iframe>
         </section>
       </div>
     </>

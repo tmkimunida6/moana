@@ -21,7 +21,7 @@ export default function BenefitBox({
     )
 
   return (
-    <div className="bg-white rounded-md p-4 flex items-center gap-6 max-w-[400px] mx-auto w-full">
+    <div className="bg-white rounded-md p-4 flex items-center gap-6 max-w-[400px] mx-auto w-full md:mx-0">
       <span className="text-md font-bold relative after:absolute after:bottom-1 after:left-0 after:w-full after:h-[4px] after:bg-[var(--brand-color-primary-50)]">
         特典
         <span className="text-brand-primary text-[40px] text-outline-white leading-none">
