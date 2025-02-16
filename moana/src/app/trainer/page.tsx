@@ -1,7 +1,14 @@
+import type { Metadata } from 'next'
 import CvButton from '@/components/custom/atoms/CvButton'
 import HeadingWithUnderline from '@/components/custom/atoms/HeadingWIthUnderline'
 import PageHeading from '@/components/custom/molecules/PageHeading'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'トレーナー紹介 | MOANA Personal Training Gym',
+  description:
+    'プロのトレーナーがお客様ひとりひとりに適した運動メニューを考えます。何から始めれば良いかわからないという方もまずはお気軽にご相談ください。モアナのトレーナーが皆様の目標達成を全力でサポートいたします。',
+}
 
 export default function Trainer() {
   return (

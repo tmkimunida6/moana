@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import CvButton from '@/components/custom/atoms/CvButton'
 import TextLink from '@/components/custom/atoms/TextLink'
 import PageHeading from '@/components/custom/molecules/PageHeading'
@@ -8,6 +9,12 @@ import BenefitBox from '@/components/feature/price/BenefitBox'
 import PriceBox from '@/components/feature/price/PriceBox'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { IoChevronForward, IoPeopleSharp, IoPersonSharp } from 'react-icons/io5'
+
+export const metadata: Metadata = {
+  title: '料金案内 | MOANA Personal Training Gym',
+  description:
+    'モアナの料金システムはとっても簡単。お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。お一人様はもちろん、お二人でのトレーニングコースもご用意しているほか、体験コースや測定のみも可能ですのでお気軽にお立ち寄りください。',
+}
 
 export default function Price() {
   return (

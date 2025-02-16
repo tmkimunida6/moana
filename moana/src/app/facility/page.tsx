@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
 import CvButton from '@/components/custom/atoms/CvButton'
 import TextLink from '@/components/custom/atoms/TextLink'
 import PageHeading from '@/components/custom/molecules/PageHeading'
 import FacilityBox from '@/components/feature/facility/FacilityBox'
 import { IoChevronForward } from 'react-icons/io5'
+
+export const metadata: Metadata = {
+  title: '施設紹介 | MOANA Personal Training Gym',
+  description:
+    'モアナのトレーニングスペースはハワイをイメージした落ち着いた雰囲気になっています。また、オリンピック選手や一流アスリートも活用している体組成計「Inbody」など、最新のトレーニングマシンを設置しています。普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？',
+}
 
 export default function Facility() {
   return (
