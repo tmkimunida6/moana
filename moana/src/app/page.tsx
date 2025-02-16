@@ -12,7 +12,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { IoCall, IoChevronForward, IoMail } from 'react-icons/io5'
 import Mv from '@/components/feature/top/Mv'
-import InstagramEmbed from '@/components/feature/top/InstagramEmbed'
 
 export default function Home() {
   return (
