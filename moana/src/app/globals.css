@@ -8,6 +8,11 @@ body {
 
 @layer base {
   :root {
+    --brand-color-primary: #0074bc; /* 例：ブランドのメインカラー */
+    --brand-color-primary-50: rgba(0, 116, 188, 0.5); /* 例：メインカラー50% */
+    --brand-color-accent: #ee8300; /* 例：ブランドの例：アクセントカラー */
+    --brand-color-bg: #e5f1f8; /* 例：アクセントカラー */
+    --brand-color-link: #0064bc; /* 例：リンク用カラー */
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -65,8 +70,13 @@ body {
 @layer base {
   * {
     @apply border-border;
+    line-height: 1.8;
   }
   body {
     @apply bg-background text-foreground;
+    background-color: var(--brand-color-bg);
+  }
+  a {
+    transition: all 0.3s;
   }
 }
