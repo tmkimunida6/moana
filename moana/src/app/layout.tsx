@@ -1,6 +1,7 @@
 import { Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
 import { Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import TypekitLoader from '@/lib/TypekitLoader'
 import Header from '@/components/custom/organisms/layout/Header'
 import Footer from '@/components/custom/organisms/layout/Footer'
@@ -64,6 +65,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-RL2NE0GFRL" />
     </html>
   )
 }
