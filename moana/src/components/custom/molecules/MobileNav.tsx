@@ -38,7 +38,7 @@ export default function MobileNav({ menuItems }: MobileNavProps) {
 
       <SheetContent side="top" className="bg-white px-4 pb-6 pt-0">
         <SheetTitle className="py-3">
-          <Link href="/">
+          <Link href="/" onClick={() => setOpen(false)}>
             <Logo section="header" />
           </Link>
         </SheetTitle>

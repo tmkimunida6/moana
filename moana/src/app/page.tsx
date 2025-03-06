@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IoCall, IoChevronForward, IoMail } from 'react-icons/io5'
@@ -14,23 +13,20 @@ import SectionHeading from '@/components/feature/top/SectionHeading'
 import StepBox from '@/components/feature/top/StepBox'
 import Mv from '@/components/feature/top/Mv'
 
-export const metadata: Metadata = {
-  title: 'MOANA Personal Training Gym',
-  description:
-    'モアナは、運動が苦手な方やご高齢の方にこそぴったりなトレーニングジム。お客様ひとりひとりに合わせた最適なメニューを提案し、お客様の健康と目標達成を全力でサポートします。普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？',
-}
-
 export default function Home() {
   return (
     <>
-      <section className="mb-20">
+      <section className="relative mb-20">
         <Mv />
+        <div className="absolute bottom-0 left-0 mx-[calc(50%-50vw)] h-[20px] w-[100vw]">
+          <div className="absolute h-full w-full max-w-[none] animate-wave bg-[url(/images/wave.png)] bg-[auto_100%] bg-left md:animate-wave-md"></div>
+        </div>
       </section>
       <div className="grid gap-20">
         <section>
           <SectionHeading subtext="about">
             <span className="font-moana text-[38px] leading-none text-brand-primary">
-              Moana
+              MOANA
             </span>
             について
           </SectionHeading>

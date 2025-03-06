@@ -11,9 +11,12 @@ import PriceBox from '@/components/feature/price/PriceBox'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 export const metadata: Metadata = {
-  title: '料金案内 | MOANA Personal Training Gym',
+  title:
+    '料金案内 | MOANA Personal Training Gym（モアナ） | 姫路のパーソナルトレーニングジム',
   description:
     'モアナの料金システムはとっても簡単。お支払いいただくのは、トレーニングの利用料金だけで、わかりづらい手数料や解約金はありません。お一人様はもちろん、お二人でのトレーニングコースもご用意しているほか、体験コースや測定のみも可能ですのでお気軽にお立ち寄りください。',
+  keywords:
+    'ジム,トレーニング,パーソナル,姫路,モアナ,Moana Personal Traing Gym,料金案内',
 }
 
 export default function Price() {
