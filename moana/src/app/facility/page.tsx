@@ -6,9 +6,12 @@ import PageHeading from '@/components/custom/molecules/PageHeading'
 import FacilityBox from '@/components/feature/facility/FacilityBox'
 
 export const metadata: Metadata = {
-  title: '施設紹介 | MOANA Personal Training Gym',
+  title:
+    '施設紹介 | MOANA Personal Training Gym（モアナ） | 姫路のパーソナルトレーニングジム',
   description:
     'モアナのトレーニングスペースはハワイをイメージした落ち着いた雰囲気になっています。また、オリンピック選手や一流アスリートも活用している体組成計「Inbody」など、最新のトレーニングマシンを設置しています。普通のジムとは一味違う、ハワイのようなゆったりとした雰囲気の中で、私たちと運動を始めてみませんか？',
+  keywords:
+    'ジム,トレーニング,パーソナル,姫路,モアナ,Moana Personal Traing Gym,施設紹介',
 }
 
 export default function Facility() {

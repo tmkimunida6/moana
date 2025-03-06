@@ -5,9 +5,12 @@ import HeadingWithUnderline from '@/components/custom/atoms/HeadingWIthUnderline
 import PageHeading from '@/components/custom/molecules/PageHeading'
 
 export const metadata: Metadata = {
-  title: 'トレーナー紹介 | MOANA Personal Training Gym',
+  title:
+    'トレーナー紹介 | MOANA Personal Training Gym（モアナ） | 姫路のパーソナルトレーニングジム',
   description:
     'プロのトレーナーがお客様ひとりひとりに適した運動メニューを考えます。何から始めれば良いかわからないという方もまずはお気軽にご相談ください。モアナのトレーナーが皆様の目標達成を全力でサポートいたします。',
+  keywords:
+    'ジム,トレーニング,パーソナル,姫路,モアナ,Moana Personal Traing Gym,トレーナー紹介',
 }
 
 export default function Trainer() {

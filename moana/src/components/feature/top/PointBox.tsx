@@ -26,7 +26,7 @@ export default function PointBox({
           className="object-contain md:object-cover"
         />
       </div>
-      <div className="relative z-[2] mt-[-40] grid gap-4 md:mt-[-56]">
+      <div className="relative z-[2] -mt-10 grid gap-4 md:mt-[-56]">
         <h3 className="flex items-baseline gap-4 text-[22px] font-bold leading-none md:text-2xl">
           <span className="text-[86px] leading-none text-brand-primary text-outline-white">
             {index}

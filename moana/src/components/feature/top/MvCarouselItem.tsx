@@ -18,7 +18,7 @@ export default function MvCarouselItem({
     <CarouselItem className="max-w-[928px]">
       <div
         style={cssProperties}
-        className={`relative h-[400px] w-full bg-[image:var(--image-url)] bg-[auto_100%] bg-[top_center] bg-no-repeat md:h-[500px]`}
+        className={`relative h-[430px] w-full bg-[image:var(--image-url)] bg-[auto_100%] bg-[top_center] bg-no-repeat md:h-[530px]`}
       >
         {children}
       </div>

@@ -66,6 +66,16 @@ export default {
       fontFamily: {
         moana: ['cooper-black-std', 'Noto Sans jp', 'serif'],
       },
+      keyframes: {
+        wave: {
+          '0%': { backgroundPosition: '0' },
+          '100%': { backgroundPosition: '-100vw' },
+        },
+      },
+      animation: {
+        wave: 'wave 10s linear infinite',
+        'wave-md': 'wave 20s linear infinite',
+      },
     },
   },
   plugins: [
