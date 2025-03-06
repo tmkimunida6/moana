@@ -57,9 +57,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="MOANA" />
         <link rel="manifest" href="/favicons/manifest.json" />
       </head>
-      <body
-        className={`${notoSansJP.className} flex min-h-[100dvh] flex-col overflow-x-hidden text-[18px]`}
-      >
+      <body className={`${notoSansJP.className} overflow-x-hidden text-[18px]`}>
         <Header />
         <div className="mx-auto max-w-5xl flex-1 px-4 pb-16 leading-[1.8] md:px-12">
           {children}
