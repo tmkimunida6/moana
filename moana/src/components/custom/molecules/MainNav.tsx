@@ -1,5 +1,3 @@
-// MainNav.tsx
-
 import Link from 'next/link'
 
 type MainNavProps = {
