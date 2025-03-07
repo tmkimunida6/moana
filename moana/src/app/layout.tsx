@@ -9,6 +9,7 @@ import Footer from '@/components/custom/organisms/layout/Footer'
 const notoSansJP = Noto_Sans_JP({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_FRONT_BASE_URL}`),
   title:
     'MOANA Personal Training Gym（モアナ） | 姫路のパーソナルトレーニングジム',
   description:
