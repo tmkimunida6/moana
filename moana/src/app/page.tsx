@@ -12,6 +12,7 @@ import PointBox from '@/components/feature/top/PointBox'
 import SectionHeading from '@/components/feature/top/SectionHeading'
 import StepBox from '@/components/feature/top/StepBox'
 import Mv from '@/components/feature/top/Mv'
+import InstagramEmbed from '@/components/feature/top/InstagramEmbed'
 
 export default function Home() {
   return (
@@ -228,6 +229,7 @@ export default function Home() {
               最新情報
             </span>
           </SectionHeading>
+          <InstagramEmbed />
           <p>
             InstagramのMoana公式アカウントでは、日々最新の情報や実際のトレーニングの様子を発信しています。
             <br />
