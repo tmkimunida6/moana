@@ -41,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <GoogleAnalytics gaId="G-RL2NE0GFRL" />
         <TypekitLoader />
         <link
           rel="icon"
@@ -65,7 +66,6 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-RL2NE0GFRL" />
     </html>
   )
 }
