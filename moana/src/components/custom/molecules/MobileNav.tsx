@@ -1,6 +1,5 @@
 'use client'
 
-// MobileNav.tsx
 import { useState } from 'react'
 import { TiWaves } from 'react-icons/ti'
 import Link from 'next/link'

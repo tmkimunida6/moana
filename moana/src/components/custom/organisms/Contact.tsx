@@ -19,7 +19,7 @@ export default function Contact() {
         </span>
       </ContactTableRow>
       <ContactTableRow title="Eメール">
-        <TextLink href="email:moanapersonalgym@gmail.com" openInNew>
+        <TextLink href="mailto:moanapersonalgym@gmail.com" openInNew>
           <span className="break-all">moanapersonalgym@gmail.com</span>
         </TextLink>
       </ContactTableRow>

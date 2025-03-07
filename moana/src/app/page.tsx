@@ -166,13 +166,13 @@ export default function Home() {
             >
               <ul className="mt-2 grid gap-1 text-base">
                 <li>
-                  <TextLink href="#">
+                  <TextLink href="#" openInNew>
                     <IoMail size={24} className="text-brand-primary" />
                     お問い合わせフォームはこちら
                   </TextLink>
                 </li>
                 <li>
-                  <TextLink href="#">
+                  <TextLink href="https://lin.ee/8BhsvPu" openInNew>
                     <Image
                       src="/images/line.svg"
                       alt="モアナ公式ライン"
@@ -269,13 +269,13 @@ export default function Home() {
               </p>
               <ul className="mt-2 grid gap-1 text-base">
                 <li>
-                  <TextLink href="#">
+                  <TextLink href="#" openInNew>
                     <IoMail size={24} className="text-brand-primary" />
                     お問い合わせフォームはこちら
                   </TextLink>
                 </li>
                 <li>
-                  <TextLink href="#">
+                  <TextLink href="https://lin.ee/8BhsvPu" openInNew>
                     <Image
                       src="/images/line.svg"
                       alt="モアナ公式ライン"
