@@ -229,14 +229,17 @@ export default function Home() {
               最新情報
             </span>
           </SectionHeading>
-          <InstagramEmbed />
           <p>
-            InstagramのMoana公式アカウントでは、日々最新の情報や実際のトレーニングの様子を発信しています。
+            Instagramのモアナ公式アカウントでは、日々最新の情報や実際のトレーニングの様子を発信しています。
             <br />
             ぜひフォローしていただけると嬉しいです！
           </p>
+          <InstagramEmbed />
           <div className="text-right">
-            <TextLink href="tel:079-290-9070">
+            <TextLink
+              href="https://www.instagram.com/moana_personal_gym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              openInNew
+            >
               <IoChevronForward size="1em" />
               もっと投稿を見る
             </TextLink>
@@ -294,6 +297,15 @@ export default function Home() {
             loading="lazy"
             className="mt-10 h-[300px] w-full md:h-[400px]"
           ></iframe>
+          <div className="mt-1 text-right">
+            <TextLink
+              href="https://maps.app.goo.gl/9Asa5GeZQUcLCwoo8"
+              openInNew
+            >
+              <IoChevronForward size="1em" />
+              Google Mapで見る
+            </TextLink>
+          </div>
         </section>
       </div>
     </>
