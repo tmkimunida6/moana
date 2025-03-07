@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect } from 'react'
 
 export default function InstagramEmbed() {
@@ -22,27 +23,25 @@ export default function InstagramEmbed() {
   }, [])
 
   return (
-    <>
-      <div
-        className="embedsocial-hashtag"
-        data-ref="4cb929ebb9d7da904b7e6be8547586d7f5217160"
+    <div
+      className="embedsocial-hashtag"
+      data-ref="4cb929ebb9d7da904b7e6be8547586d7f5217160"
+    >
+      <a
+        className="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding"
+        href="https://embedsocial.jp/"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="EmbedSocialで作成しました"
       >
-        <a
-          className="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding"
-          href="https://embedsocial.jp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="EmbedSocialで作成しました"
-        >
-          <img
-            src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp"
-            alt="EmbedSocial"
-          />
-          <div className="es-widget-branding-text">
-            EmbedSocialで作成しました
-          </div>
-        </a>
-      </div>
-    </>
+        <Image
+          src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp"
+          alt="EmbedSocial"
+          width={20}
+          height={20}
+        />
+        <div className="es-widget-branding-text">EmbedSocialで作成しました</div>
+      </a>
+    </div>
   )
 }
