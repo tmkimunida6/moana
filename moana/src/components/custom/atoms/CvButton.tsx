@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 export default function CvButton() {
   return (
     <Button asChild>
-      <Link href="#" className="font-bold" target="_blank" rel="noopener">
+      <Link href="mailto:moanapersonalgym@gmail.com" className="font-bold">
         無料カウンセリングを申し込む
       </Link>
     </Button>

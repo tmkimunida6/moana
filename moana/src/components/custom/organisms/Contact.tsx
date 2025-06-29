@@ -6,7 +6,7 @@ export default function Contact() {
     <ul className="grid gap-2">
       <ContactTableRow title="住所">
         <TextLink href="https://maps.app.goo.gl/9Asa5GeZQUcLCwoo8" openInNew>
-          〒671-2245 兵庫県姫路市町田214-1-3
+          〒671-2217 兵庫県姫路市町田214-1-3
         </TextLink>
       </ContactTableRow>
       <ContactTableRow title="営業時間">
@@ -19,7 +19,7 @@ export default function Contact() {
         </span>
       </ContactTableRow>
       <ContactTableRow title="Eメール">
-        <TextLink href="mailto:moanapersonalgym@gmail.com" openInNew>
+        <TextLink href="mailto:moanapersonalgym@gmail.com">
           <span className="break-all">moanapersonalgym@gmail.com</span>
         </TextLink>
       </ContactTableRow>

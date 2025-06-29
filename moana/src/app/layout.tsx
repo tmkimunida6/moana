@@ -32,6 +32,9 @@ export const metadata: Metadata = {
       '姫路市町田にあるモアナは、運動苦手な方やご高齢の方にこそおすすめなパーソナルトレーニングジム。入会金、解約金、各種手数料全て0円。無料カウンセリングも実施中！一人一人に最適なメニューと完全プライベートな空間でお客様の健康と目標達成をサポートします。',
     card: 'summary_large_image',
   },
+  alternates: {
+    canonical: 'https://moana-personalgym.f5.si/',
+  },
 }
 
 export default function RootLayout({
@@ -59,6 +62,30 @@ export default function RootLayout({
         />
         <meta name="apple-mobile-web-app-title" content="MOANA" />
         <link rel="manifest" href="/favicons/manifest.json" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'HealthAndBeautyBusiness',
+              name: 'MOANA Personal Training Gym',
+              url: 'https://moana-personalgym.f5.si/',
+              logo: 'https://moana-personalgym.f5.si/favicons/favicon-96x96.png',
+              image: 'https://moana-personalgym.f5.si/opengraph-image.png',
+              description:
+                '姫路市町田にあるモアナは、運動苦手な方やご高齢の方にこそおすすめなパーソナルトレーニングジム。',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: '姫路市町田',
+                addressRegion: '兵庫県',
+                postalCode: '671-2217',
+                streetAddress: '214-1-3',
+              },
+              telephone: '079-290-9070',
+              openingHours: 'Mo-Su 09:00-21:00',
+            }),
+          }}
+        />
       </head>
       <body className={`${notoSansJP.className} overflow-x-hidden text-[18px]`}>
         <Header />

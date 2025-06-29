@@ -26,7 +26,7 @@ export const menuItems = [
   {
     id: 5,
     text: '無料カウンセリング',
-    href: '/',
+    href: 'mailto:moanapersonalgym@gmail.com',
     headerOnly: true,
   },
 ]

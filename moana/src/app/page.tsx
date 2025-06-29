@@ -166,9 +166,9 @@ export default function Home() {
             >
               <ul className="mt-2 grid gap-1 text-base">
                 <li>
-                  <TextLink href="#" openInNew>
+                  <TextLink href="mailto:moanapersonalgym@gmail.com">
                     <IoMail size={24} className="text-brand-primary" />
-                    お問い合わせフォームはこちら
+                    お問い合わせはこちら
                   </TextLink>
                 </li>
                 <li>
@@ -263,29 +263,19 @@ export default function Home() {
             <Contact />
             <div>
               <p>
-                LINEまたはお問い合わせフォームからのお問い合わせも受け付けております。
+                LINEからのお問い合わせも受け付けております。
                 <br />
                 お気軽にお問い合わせください。
               </p>
-              <ul className="mt-2 grid gap-1 text-base">
-                <li>
-                  <TextLink href="#" openInNew>
-                    <IoMail size={24} className="text-brand-primary" />
-                    お問い合わせフォームはこちら
-                  </TextLink>
-                </li>
-                <li>
-                  <TextLink href="https://lin.ee/8BhsvPu" openInNew>
-                    <Image
-                      src="/images/line.svg"
-                      alt="モアナ公式ライン"
-                      width={24}
-                      height={24}
-                    />
-                    LINEはこちら
-                  </TextLink>
-                </li>
-              </ul>
+              <TextLink href="https://lin.ee/8BhsvPu" openInNew>
+                <Image
+                  src="/images/line.svg"
+                  alt="モアナ公式ライン"
+                  width={24}
+                  height={24}
+                />
+                LINEはこちら
+              </TextLink>
             </div>
           </div>
           <iframe
