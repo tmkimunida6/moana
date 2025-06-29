@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       'MOANA Personal Training Gym（モアナ） | 姫路のパーソナルトレーニングジム',
     description:
       '姫路市町田にあるモアナは、運動苦手な方やご高齢の方にこそおすすめなパーソナルトレーニングジム。入会金、解約金、各種手数料全て0円。無料カウンセリングも実施中！一人一人に最適なメニューと完全プライベートな空間でお客様の健康と目標達成をサポートします。',
-    url: 'https://moana-personalgym.f5.si/',
+    url: 'https://www.moana-personalgym.f5.si/',
     siteName: 'MOANA Personal Training Gym',
     type: 'website',
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   alternates: {
-    canonical: 'https://moana-personalgym.f5.si/',
+    canonical: 'https://www.moana-personalgym.f5.si/',
   },
 }
 
@@ -69,9 +69,9 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'HealthAndBeautyBusiness',
               name: 'MOANA Personal Training Gym',
-              url: 'https://moana-personalgym.f5.si/',
-              logo: 'https://moana-personalgym.f5.si/favicons/favicon-96x96.png',
-              image: 'https://moana-personalgym.f5.si/opengraph-image.png',
+              url: 'https://www.moana-personalgym.f5.si/',
+              logo: 'https://www.moana-personalgym.f5.si/favicons/favicon-96x96.png',
+              image: 'https://www.moana-personalgym.f5.si/opengraph-image.png',
               description:
                 '姫路市町田にあるモアナは、運動苦手な方やご高齢の方にこそおすすめなパーソナルトレーニングジム。',
               address: {
